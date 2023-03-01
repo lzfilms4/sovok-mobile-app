@@ -13,9 +13,7 @@ const Post = styled.View`
 `
 
 let onClick = (id,text) => {
-  console.log(id, text);
-  // setIsSended(!isSended)
-  // axios.post('url', [id, text])
+  axios.post('https://bright-wasp-long-johns.cyclic.app/person/addMood', {fullName: id, mood: text})
 }
 
 export default function App() {
